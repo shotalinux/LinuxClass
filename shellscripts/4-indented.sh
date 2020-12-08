@@ -22,7 +22,7 @@ else
 fi
 '
 
-
+: '
 # elif go to the party
 if [ $1 -ge 18 ]
 then
@@ -33,18 +33,18 @@ then
 else
   echo You may not go to the party.
 fi
+'
 
 
-: '
 # test if file is readable and/or size greater than zero
-# if [ -r $1 ] || [ -s $1 ] # or example
-if [ -r $1 ] && [ -s $1 ] # and example
+if [ -r $1 ] || [ -s $1 ] # or example
+#if [ -r $1 ] && [ -s $1 ] # and example
 then
   echo This file is useful.
 fi
-'
 
-: '
+
+
 # case example
 case $1 in
   start)
@@ -60,4 +60,3 @@ case $1 in
     echo dont know
     ;;
 esac
-'

@@ -14,4 +14,4 @@ MYVARETC=$( ls /etc | wc -l )
 echo "etc-ში არის $MYVARETC ფაილი/ფოლდერი"
 
 # export
-export MYVARETC
+export NAME

@@ -1,6 +1,7 @@
 #!/bin/bash
 # Basic arithmetic using let
-let a=5+4
+#let a=5+4
+a=$( expr 5 + 4 )
 echo "5+4="$a
 let "a = 4 + 5"
 echo "4+5=$a"
@@ -9,7 +10,7 @@ let a++
 echo $a
 let "a = 4 * 5"
 echo "4x5="$a
-let "a = $1 + 30"
+let "a = $1 + $2 + 30"
 echo $a
 ### expr ####
 echo
